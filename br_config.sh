@@ -2,7 +2,9 @@
 
 # DO NOT RUN THIS SCRIPT MANUALLY, AS IT'S NOT NEEDED TO DO SO.
 
-BR_RELEASE="buildroot-2022.11"
+#BR_RELEASE="buildroot-2022.11"
+export BR_RELEASE="buildroot-2024.02.3"
+export FORCE_UNSAFE_CONFIGURE=1
 
 if [ ! -e ${BR_RELEASE}.tar.gz ]; then
   wget https://buildroot.org/downloads/${BR_RELEASE}.tar.gz

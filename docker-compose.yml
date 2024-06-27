@@ -1,7 +1,8 @@
-version: "3.4"
+#version: "3.4"
 
 services:
   buildroot:
+    container_name: buildroot-x6100
     build:
       dockerfile: Dockerfile
     stop_signal: SIGKILL
@@ -9,7 +10,7 @@ services:
       - .:/workspace:cached
       - vscode_server:/root/.vscode-server
       - build_output:/workspace/build
-      - buildroot_dir:/workspace/buildroot-2022.11
+      - buildroot_dir:/workspace/buildroot-2024.02.3
       - buildroot_cache:/root/.buildroot-ccache
     restart: always
     logging:

@@ -5,7 +5,7 @@
  * Thanks <apritzel> from #linux-sunxi @ OFTC (https://oftc.net/)
  */
 
-#include "sun8i-a33.dtsi"
+#include "allwinner/sun8i-a33.dtsi"
 
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/input/input.h>
@@ -327,7 +327,7 @@
 	};
 };
 
-#include "axp223.dtsi"
+#include "allwinner/axp223.dtsi"
 
 &ac_power_supply {
 	status = "okay";
